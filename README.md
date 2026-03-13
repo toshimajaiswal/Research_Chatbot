@@ -25,7 +25,7 @@
 | LLM | Groq `llama-3.3-70b-versatile` |
 | Embeddings | `BAAI/bge-small-en-v1.5` |
 | Vector DB | FAISS |
-| PDF Parsing | PyMuPDF + pytesseract OCR |
+| PDF Parsing | PyMuPDF|
 | Web Search | DuckDuckGo (no API key needed) |
 | Frontend | Streamlit |
 | Chat History | SQLite |
@@ -120,11 +120,10 @@ Sources displayed to user
 - Works with **any PDF** in any domain — not limited to AI/research papers
 - For best results, upload text-based PDFs (downloaded from arXiv, not scanned)
 - Free Groq tier allows ~100,000 tokens/day — use concise mode for longer sessions
-- Chat history resets if the app is restarted on Streamlit Cloud (SQLite is ephemeral)
+- Chat history resets if the app is restarted on Streamlit Cloud 
 
 ---
 
 ## Author
 
 **Toshima Jaiswal**
-Built for the NeoStats AI Engineer Chatbot Blueprint Challenge
