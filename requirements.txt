@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain-core
+langchain-groq
+langchain-community
+groq
+faiss-cpu
+sentence-transformers
+pymupdf
+duckduckgo-search
+python-dotenv
+pytesseract
+pillow
+numpy
+ddgs
