@@ -348,25 +348,12 @@ def chat_page():
 
         # ── New Chat / Save Chat — always visible, never need to scroll ───
         st.divider()
-        col1, col2 = st.columns([1, 1])
-        with col1:
-            if st.button("New Chat", use_container_width=True):
-                if st.session_state.messages and st.session_state["active_session_id"] is None:
-                    save_session(st.session_state.messages)
-                st.session_state.messages             = []
-                st.session_state["active_session_id"] = None
-                st.rerun()
-        with col2:
-            if st.button("Save Chat", use_container_width=True):
-                if st.session_state.messages:
-                    sid = save_session(
-                        st.session_state.messages,
-                        session_id=st.session_state["active_session_id"]
-                    )
-                    st.session_state["active_session_id"] = sid
-                    st.toast("✅ Chat saved!")
-                else:
-                    st.toast("Nothing to save yet.")
+        if st.button("New Chat", use_container_width=True):
+            if st.session_state.messages and st.session_state["active_session_id"] is None:
+                save_session(st.session_state.messages)
+            st.session_state.messages             = []
+            st.session_state["active_session_id"] = None
+            st.rerun()
 
         st.divider()
         st.header("📄 Upload Documents")
