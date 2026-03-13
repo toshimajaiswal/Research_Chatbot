@@ -369,7 +369,7 @@ def chat_page():
                     st.toast("Nothing to save yet.")
 
         st.divider()
-        st.header("📄 Upload Research Papers")
+        st.header("📄 Upload Documents")
 
         uploaded_files = st.file_uploader(
             "Drop PDFs here", type=["pdf"], accept_multiple_files=True
