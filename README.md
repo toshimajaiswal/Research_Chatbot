@@ -2,7 +2,7 @@
 
 > An intelligent research chatbot that lets you upload academic papers and get cited, accurate answers powered by RAG and live web search.
 
-🔗 **Live Demo**: [research-mind-toshima2612.streamlit.app](https://research-mind-toshima2612.streamlit.app)
+🔗 **Live Demo**: [research-chatbot-toshima2612.streamlit.app](https://research-chatbot-toshima2612.streamlit.app)
 
 ---
 
