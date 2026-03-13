@@ -346,7 +346,7 @@ def chat_page():
 
         use_web = st.toggle("🌐 Live Web Search", value=True)
 
-        # ── New Chat / Save Chat — always visible, never need to scroll ───
+        # ── New Chat ───
         st.divider()
         if st.button("New Chat", use_container_width=True):
             if st.session_state.messages and st.session_state["active_session_id"] is None:
