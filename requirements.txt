@@ -9,7 +9,6 @@ sentence-transformers
 pymupdf
 duckduckgo-search
 python-dotenv
-pytesseract
 pillow
 numpy
 ddgs
